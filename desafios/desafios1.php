@@ -91,24 +91,25 @@
     </table>
 
     <?php
-        $peso = 59;
+        $peso = 56;
         $altura = 1.75;
 
-        $resultado = $altura / $altura * $altura;
-        echo $resultado;
+        $resultado = ($peso / ($altura ** 2));
+        echo "Peso atual:  $resultado";
+        echo "<br>";
 
         if ($resultado < 18.5) {
-            echo "Abaixo do peso";
-        } elseif ($resultado >= 18.5 || $resultado <= 24.9) {
-            echo "Peso Normal";
-        } elseif ($resultado >= 25 || $resultado <= 29.9) {
-            echo "Sobrepeso";
-        } elseif ($resultado >= 30 || $resultado <= 34.9){
-            echo "Obesidade Grau I";
-        } elseif ($resultado >= 35 || $resultado <= 39.9) {
-            echo "Obesidade Grau II";
-        } elseif ($resultado >= 40) {
-            echo "Obesidade Grau III ou Mórbida";
+            echo "Status: Abaixo do peso";
+        } else if ($resultado >= 18.5 && $resultado <= 24.9) {
+            echo "Status: Peso Normal";
+        } else if ($resultado >= 25 && $resultado <= 29.9) {
+            echo "Status: Sobrepeso";
+        } else if ($resultado >= 30 && $resultado <= 34.9){
+            echo "Status: Obesidade Grau I";
+        } else if ($resultado >= 35 && $resultado <= 39.9) {
+            echo "Status: Obesidade Grau II";
+        } else if ($resultado >= 40) {
+            echo "Status: Obesidade Grau III ou Mórbida";
         }
     ?>
 </body>
