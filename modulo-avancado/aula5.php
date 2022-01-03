@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 5 - Avançado</title>
-</head>
-<body>
+
+<?php include '../layouts/head.php'; ?>
+
     <h3>Referências e mais listas</h3>
+    
     <?php
     
     $text = "Algum texto";
@@ -29,8 +24,24 @@
     }<br>
     minhaFuncao($variavel);<br><br>
 
-Alternativa correta! Desta forma, o endereço da variável $variavel será recebido na função minhaFuncao. Qualquer alteração em $meuParametro dentro da função refletirá na variável original que foi passada ($variavel). Para uma explicação mais completa (e complexa), acesse a documentação
+    <p> Desta forma, o endereço da variável $variavel será recebido na função minhaFuncao. Qualquer alteração em $meuParametro dentro da função refletirá na variável original que foi passada ($variavel). Para uma explicação mais completa (e complexa), acesse a documentação </p>
 
+    <h3>  A função List </h3>
 
-</body>
-</html>
+    <p>Pegar valores de um array em uma váriavel separada</p>
+
+    <?php
+
+    $idadeList = [21, 23, 19, 25, 30, 41, 18];
+
+    list($idadeVinicius, $idadeJoao, $idadeMaria) = $idadeList;
+
+    echo $idadeList;
+    
+    ?>
+
+    <p>
+    Esse list() não traz novas funcionalidades, afinal tudo que conseguimos fazer com ele, também é possível fazer sem. Essa é só uma forma mais elegante de passar os valores de um array para variáveis separadas, que é exatamente o que fizemos no exemplo acima. 
+    </p>
+
+<?php include '../layouts/rodape.php' ?>
