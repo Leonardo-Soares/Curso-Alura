@@ -44,4 +44,18 @@
     Esse list() não traz novas funcionalidades, afinal tudo que conseguimos fazer com ele, também é possível fazer sem. Essa é só uma forma mais elegante de passar os valores de um array para variáveis separadas, que é exatamente o que fizemos no exemplo acima. 
     </p>
 
+
+    <h3>Resumo da aula 5</h3>
+    <p>
+    Nessa aula aprendemos sobre a passagem do parâmetro por valor ou por referência. O padrão do PHP é passar o parâmetro por valor, isto é fazer uma cópia do parâmetro. Quando usamos a passagem por referência temos acesso aos valores da variável original, pois passamos a referência apenas (não é feito nenhuma cópia).
+    </p>
+    
+    <p>
+    Para usar a passagem de referência basta colocar o caracter & na frente da variável.
+    </p>
+
+    <p>
+        Voltamos a falar também sobre listas e como pegar vários elementos de uma vez, só usando a função list(..):
+    </p>
+
 <?php include '../layouts/rodape.php' ?>
